@@ -1,5 +1,14 @@
-import * as React from "react"
+import * as React from "react";
+import Layout from "../components/Layout";
 
 export default function Home() {
-  return <div>Yay!</div>
+	return (
+		<Layout>
+			<section>
+				<div>
+					<h1>Yay!</h1>
+				</div>
+			</section>
+		</Layout>
+	);
 }
