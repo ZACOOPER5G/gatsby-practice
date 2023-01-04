@@ -16,6 +16,7 @@ module.exports = {
         path: `${__dirname}/src/projects`,
       },
     },
+    `gatsby-transformer-remark`,
   ],
   siteMetadata: {
     title: "Web Warrior",
