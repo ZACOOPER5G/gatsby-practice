@@ -5,7 +5,6 @@ import { Link, graphql } from "gatsby";
 import Img from "gatsby-image";
 
 export default function Home({ data }) {
-	console.log(data)
 	
 	return (
 		<Layout>
@@ -16,7 +15,7 @@ export default function Home({ data }) {
 					<p>More yay</p>
 					<Link className={styles.btn} to="/projects" >My portfolio projects</Link>
 				</div>
-				{/* <Img fluid={}  /> */}
+				<Img fluid={ data.file.childImageSharp.fluid }  />
 			</section>
 		</Layout>
 	);
